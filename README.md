@@ -36,9 +36,9 @@ Creada para estudiar la asignatura de Estructuras de Datos II (Ingeniería Infor
 | 🔍 **ABB** — Árbol Binario de Búsqueda | Inserción · Búsqueda · Eliminación (3 casos) · Inorden como prueba de orden |
 | ⚖️ **AVL** ⭐ | Factores de equilibrio · Pivote · Rotaciones simples y dobles animadas · Tabla de 4 casos · Comparación ABB vs AVL |
 | 🔴 **ARN** — Árbol Rojo-Negro ⭐ | Inserción con casos 1/2/3.1/3.2A/3.2B · Recoloración · Rotaciones · Checklist 5 propiedades |
-| 📖 **Diccionarios** | *Próximamente* — ARN clave-valor + tabla hash con encadenamiento |
-| 🕸️ **Grafos** | *Próximamente* — Dijkstra (tabla) + Floyd (matrices D y A) |
-| 🏔️ **Montículos** | *Próximamente* — Flotar/Hundir · Representación doble array+árbol · Heapsort completo |
+| 📖 **Diccionarios** | Tabla hash con encadenamiento externo · h(k) = k mod M · Inserción, búsqueda y eliminación · Factor de carga λ |
+| 🕸️ **Grafos** | Editor de grafo dirigido ponderado · Dijkstra (tabla D, visitados, antecesores) · Floyd-Warshall (matrices D y A) |
+| 🏔️ **Montículos** | Flotar (swim) · Hundir (sink) · Representación doble array+árbol · Heapsort completo en 2 fases |
 
 ---
 
@@ -132,9 +132,9 @@ src/
 - [x] ABB (inserción, búsqueda, eliminación 3 casos)
 - [x] AVL (reequilibrado completo, tabla de rotaciones, comparación AVL/ABB)
 - [x] ARN (5 casos, recoloración, 5 propiedades)
-- [ ] Diccionarios (ARN clave-valor + tabla hash)
-- [ ] Grafos (Dijkstra + Floyd con tablas/matrices)
-- [ ] Montículos + Heapsort
+- [x] Diccionarios (tabla hash con encadenamiento, h(k) = k mod M, factor de carga)
+- [x] Grafos (Dijkstra con tabla D/antecesores + Floyd-Warshall con matrices D y A)
+- [x] Montículos + Heapsort (flotar, hundir, build heap, heapsort 2 fases, doble representación)
 - [ ] Modo quiz (pregunta la rotación antes de mostrarla)
 - [ ] Exportar árbol como PNG/SVG
 - [ ] Generador de secuencias aleatorias
